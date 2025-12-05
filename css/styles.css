@@ -8,10 +8,12 @@
 /* base */
 ul {
     list-style-type: none;
+
 }
 
 body {
-    color: var(--color-primary-dark)
+    color: var(--color-primary-dark);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* button */
@@ -19,8 +21,7 @@ body {
     color: var(--color-primary-light);
     background-color: var(--color-brand-light);
     ;
-    border: 2px solidvar(--color-brand-light);
-    ;
+    border: 2px solidvar var(--color-brand-light);
     border-radius: 8px;
     cursor: pointer;
 }
@@ -33,16 +34,19 @@ body {
 /* link */
 .link {
     color: var(--color-primary-light);
+    text-decoration: none;
 }
 
 .link:hover {
     color: var(--color-brand-light);
-    ;
+
 }
 
 /* hero section */
 .hero-title {
     color: var(--color-primary-light);
+    text-align: center;
+
 }
 
 .hero-title .accent {
@@ -59,4 +63,10 @@ body {
 
 .section-title .accent {
     color: var(--color-brand-dark);
+}
+
+/* tradishion section */
+.traditions-text span {
+    color: var(--color-brand-light);
+    text-transform: uppercase
 }
