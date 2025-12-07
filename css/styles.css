@@ -40,9 +40,22 @@
 }
 
 /* base */
+* {
+    box-sizing: border-box;
+}
+
 ul {
     list-style-type: none;
 
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 body {
@@ -51,10 +64,32 @@ body {
     font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
 }
 
 address {
     font-style: normal;
+}
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+
 }
 
 /* button */
@@ -87,7 +122,12 @@ address {
 }
 
 /* hero section */
+.hero-section {
+    padding: 272px 0;
+}
+
 .hero-title {
+    margin-bottom: 0;
     color: var(--color-primary-light);
     text-align: center;
     font-size: 128px;
@@ -122,6 +162,14 @@ address {
 }
 
 /* tradishion section */
+.traditions-section {
+    padding-top: 96px;
+}
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
 .traditions-text .brand {
     color: var(--color-brand-light);
     font-weight: 600;
@@ -133,19 +181,35 @@ address {
 
 /* chef section */
 .chef-title {
+    margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
+
+}
+
+.chefs-title {
+    margin-bottom: 80px;
 }
 
 /* formats-section */
+.formats-title {
+    margin-bottom: 80px;
+}
+
 .format-title {
     font-size: 24px;
     font-weight: 600;
 }
 
+
 .format-text {
     font-weight: 300;
     font-size: 14px;
+}
+
+/* contact section */
+.contact-title {
+    margin-bottom: 16px;
 }
 
 /* footer */
